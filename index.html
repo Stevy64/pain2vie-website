@@ -45,7 +45,7 @@
         <!-- Masthead-->
         <header class="masthead">
             <div className="intro-text">
-                <div id="pain2vie-association">Le Pain2Vie Association</div>
+                <div id="pain2vie-association">Association Le Pain de Vie</div>
                 <div><i id="verset">"Vous avez reçu gratuitement, donnez gratuitement."</i><br/><span id="matthieu10v8">(Matthieu 10:8)</span></div>
                 <a className="btn btn-primary btn-xl js-scroll-trigger" href="#mission"><span className="fa fa-chevron-down"></span></a>
               </div>
@@ -223,14 +223,17 @@
                       <div class="card sm-6">
                         <div class="card-body">
                           <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
-                            <span class="fa fa-info-circle fa-2x text-success float-right pulse" title="online now"></span>
+                            <button class="btn btn-info btn-circle btn-circle-xl float-right">
+                                <i class="far fa-paper-plane"></i>
+                                <a data-toggle="modal" href="#formModal">Nous écrire</a>
+                            </button>
                             <label class="name lead">Pain2vie Le Mans</label>
                             <br/>
                             <span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip" data-original-title="" title="Mail"></span>
                             <span class="text-muted small"> asso.pain2vie@gmail.com</span>
                             <br/>
                             <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Adresse"></span>
-                            <span class="text-muted">25 passage des arcades, 2000 le Mans</span>
+                            <span class="text-muted">25 passage des arcades, 72000 le Mans</span>
                             <br/>
                             <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Tel"></span>
                             <span class="text-muted small">(33) 06 62 42 77 87</span>
@@ -417,6 +420,59 @@
                 </div>
             </div>
         </div>
+        <!-- form Modal -->
+        <div class="portfolio-modal modal fade" id="formModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <form method="post" name="pain2vieMessages" data-netlify="true">
+                                        <!-- Complete Name input -->
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="name">Nom et Prénom</label>
+                                            <input type="text" id="name" class="form-control" />
+                                          </div>
+
+                                        <!-- Email input -->
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="email">Addresse mail</label>
+                                            <input type="email" id="email" class="form-control" />
+                                          </div>
+
+                                        <!-- Email input -->
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="status">Status</label>
+                                            <select class="form-control">
+                                                <option>Bénévole</option>
+                                                <option>Bénéficiaire</option>
+                                                <option>Autre</option>
+                                              </select>
+                                            </div>
+                                      
+                                        <!-- Message input -->
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="message">Message</label>
+                                          <textarea type="text" class="form-control" id="message" rows="4"></textarea>
+                                        </div>
+                                      
+                                        <!-- Submit button -->
+                                        <button type="submit" class="btn btn-primary btn-block mb-4">Envoyer</button>
+                                      </form>
+                                    <button class="btn btn-light" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Annuler
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Paypal -->
         <div class="portfolio-modal modal fade" id="paypal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -448,9 +504,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
