@@ -430,7 +430,7 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <form method="post" name="pain2vieMessages" data-netlify="true">
+                                    <form method="post" name="pain2vieMessages" action="#confirmModal" data-netlify="true">
                                         <!-- Complete Name input -->
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="name">Nom et Prénom</label>
@@ -460,12 +460,15 @@
                                         </div>
                                       
                                         <!-- Submit button -->
-                                        <button type="submit" class="btn btn-primary btn-block mb-4">Envoyer</button>
+                                        <button type="submit" class="btn btn-success btn-primary btn-block mb-4">
+                                            Envoyer
+                                        </button>
                                       </form>
-                                    <button class="btn btn-light" data-dismiss="modal" type="button">
+                                      <button class="btn btn-light btn-block mb-4" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
                                         Annuler
                                     </button>
+                                    <div data-netlify-recaptcha="true"></div>
                                 </div>
                             </div>
                         </div>
