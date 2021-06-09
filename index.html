@@ -275,7 +275,7 @@
                           <h5 class="card-title">Faire un don</h5>
                           <p className="section-subheading text-muted">Pour nous soutenir, vous pouvez utiliser les moyens suivants.</p>
                           <div class="d-flex justify-content-around">
-                            <a href="#" class="btn btn-primary">Par Virement</a>
+                            <a data-toggle="modal" href="#virement" class="btn btn-primary">Par Virement</a>
                             <a data-toggle="modal" href="#paypal" class="btn btn-primary">Par Paypal</a>
                           </div>
                         </div>
@@ -513,6 +513,32 @@
                 </div>
             </div>
         </div>
+        <!-- RIB_IBAN -->
+        <div class="portfolio-modal modal fade" id="virement" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h3 class="text-uppercase">Nous soutenir par virement</h3>
+                                    <p class="item-intro text-muted">Pour faire un virement, vous pouvez télécharger notre RIB</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
+                                    <p>Vous y trouverez toutes les informations bancaires nécessaires pour votre don.</p>
+                                    <a href="files/IBAN_pain2vie_epicerie_solidaire.pdf" target="blank" class="btn btn-success">Télécharger</a>
+                                    <button class="btn btn-light" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Annuler
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Paypal -->
         <div class="portfolio-modal modal fade" id="paypal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -523,10 +549,10 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h3 class="text-uppercase">Paypal</h3>
-                                    <p class="item-intro text-muted">Pour nous soutenir par Paypal</p>
+                                    <h3 class="text-uppercase">Nous soutenir par Paypal</h3>
+                                    <p class="item-intro text-muted">Vous pouvez nous soutenir par Paypal</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Cliquez sur 'continuer' pour procéder.. </p>
                                     <a href="https://google.com" target="blank" class="btn btn-success">Continuer</a>
                                     <button class="btn btn-light" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
